@@ -1,0 +1,55 @@
+{{ define "main" }}
+<div class="container-fluid">
+    <div class="row g-0">
+        {{ $allProjects := site.Pages.ByPublishDate.Reverse }}
+        <div class="col-md-6">
+            <div class="col-md-12 personal-info large-tile">
+                <div>Aayush Chadha</div>
+                <div class="info-subtitle">PhD candidate, Computer Science, University of Manchester</div>
+                <div class="contact-icons">
+                    <a href="https://github.com/achadha0111" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/achadha0111" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                    <a href="mailto:aayush.chadha@manchester.ac.uk" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://drive.google.com/file/d/0B1K_4upsXS3dRE53SUdCQmFrNlE/view?usp=sharing" target="_blank"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-md-12 project-3 large-tile">
+                {{ $project := index $allProjects 0 }}
+                {{- partial "metadata.html" $project -}}
+            </div>
+        </div>
+       
+        <div class="col-md-3">
+
+            <div class="col-md-12 project-tile project-1">
+                {{ $project := index $allProjects 1 }}
+                {{- partial "metadata.html" $project -}}
+            </div>
+
+            <div class="col-md-12 project-tile project-4">
+                {{ $project := index $allProjects 2 }}
+                {{- partial "metadata.html" $project -}}
+            </div>
+            <div class="col-md-12 project-tile project-6">
+                {{ $project := index $allProjects 3 }}
+                {{- partial "metadata.html" $project -}}
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div class="col-md-12 project-tile project-2">
+                {{ $project := index $allProjects 4 }}
+                {{- partial "metadata.html" $project -}}
+            </div>
+            <div class="col-md-12 project-tile project-5">
+                {{ $project := index $allProjects 5 }}
+                {{- partial "metadata.html" $project -}}
+            </div>
+            <div class="col-md-12 project-tile more">
+                <div class="more-title"> More stuff </div>
+                <div class="arrow"><i class="fa-sharp fa-solid fa-arrow-right fa-4x"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

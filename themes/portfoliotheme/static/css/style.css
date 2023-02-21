@@ -1,0 +1,106 @@
+.row {
+    color: white;
+}
+.large-tile {
+    min-height: 50vh;
+}
+
+div[class*=" project-"] {
+position: relative;
+}
+
+.project-tile {
+    height: 33.33vh;
+}
+
+.personal-info {
+    color: #da5423;
+    text-align: left;
+    font-size: 3em;
+    margin-left: 2.5%;
+    padding-top: 15%;
+}
+
+.info-subtitle {
+    font-size: 0.45em;
+}
+
+.project-1 {
+    background-color: #f1bc21;
+}
+
+.project-2 {
+    background-color: #f16c80;
+}
+
+.project-3 {
+    background-color: #23aada;
+    position: relative;
+}
+
+.project-5 {
+    background-color: #f16e54;
+}
+
+.project-4 {
+    background-color: #94aaf1;
+}
+
+.project-6 {
+    background-color: #0b4a7c;
+}
+
+.more {
+    background-color: #ebf1a5;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-icons > a {
+    color: #da5423;
+    font-size: 0.75em;
+}
+
+.arrow {
+   position: absolute;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   right: 0;
+   bottom: 0;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
+.large-tile > .title {
+    font-size: 3em;
+    padding-top: 15%;
+    padding-left: 2%;
+}
+
+.large-tile > .summary, .tags {
+    padding: 2%;
+}
+
+.project-tile > .title {
+    font-size: 1.5em;
+    padding-top: 17%;
+    padding-left: 2%;
+}
+
+.project-tile > .tags {
+    font-size: 0.75em;
+}
+
+.project-tile > .summary, .tags {
+    padding: 2%;
+}
+
+.more-title {
+    font-size: 4em;
+    padding: 2%;
+}
